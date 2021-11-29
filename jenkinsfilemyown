@@ -1,0 +1,9 @@
+pipeline{
+	agent any
+	stages{
+    stage('code checkout')
+    {
+    git branch: 'development', credentialsId: 'a9b37f5d-7c73-48fb-9c0a-a5b71c019a63', url: 'https://github.com/sabiha25/maven-web-application.git'
+    }
+  }
+  }
